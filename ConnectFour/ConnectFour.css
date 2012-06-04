@@ -1,0 +1,53 @@
+<style type="text/css">
+	#title {
+		font-size: large;
+	}
+	
+	body {
+		font-family: 'arial';
+	}
+	
+	.column:hover {
+		background-color: yellow;
+	}
+	
+	#columns {
+		cursor: url(./images/redCT.gif), auto;
+	}
+	
+	#column0 {
+		float: left;
+	}
+	
+	#column0 {
+		float: left;
+	}
+	
+	#column1 {
+		float: left;
+	}
+	
+	#column2 {
+		float: left;
+	}
+	
+	#column3 {
+		float: left;
+	}
+	
+	#column4 {
+		float: left;
+	}
+	
+	#column5 {
+		float: left;
+	}
+	
+	#column6 {
+		float: left;
+	}
+	
+	#column7 {
+		float: left;
+	}
+</style>

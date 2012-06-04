@@ -1,0 +1,20 @@
+
+			.tcolumn {
+				float: left;
+				height: 223px;
+				width: 75px;
+			}
+			
+			#tcolumns {
+				float: left;
+				width: 400px;
+			}
+			
+			#cell {
+				border-style: solid;
+				border-width: 1px;
+			}
+			
+			.cell:hover {
+				background-color: yellow;
+			}

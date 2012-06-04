@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./css/ConnectFour.css" />
+		<script type="text/javascript" src="./js/ConnectFour.js"></script>
+	</head>
+	<body>
+		<br />
+		<div id="connectFour">
+			<div id="title">Connect Four</div>
+			<div id="currentTurn"><font color="red">First player's turn</font></div>
+			<button onclick="resetGame()">Reset Game</button>
+			<div id="columns">	
+				<div class="column" onclick="main(0)" id="column0">
+					<div id="x0y0"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x0y1"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x0y2"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x0y3"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x0y4"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x0y5"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+				</div>
+				<div class="column" onclick="main(1)" id="column1">
+					<div id="x1y0"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x1y1"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x1y2"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x1y3"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x1y4"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x1y5"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+				</div>
+				<div class="column" onclick="main(2)" id="column2">
+					<div id="x2y0"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x2y1"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x2y2"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x2y3"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x2y4"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x2y5"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+				</div>
+				<div class="column" onclick="main(3)" id="column3">
+					<div id="x3y0"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x3y1"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x3y2"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x3y3"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x3y4"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x3y5"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+				</div>
+				<div class="column" onclick="main(4)" id="column4">
+					<div id="x4y0"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x4y1"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x4y2"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x4y3"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x4y4"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x4y5"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+				</div>
+				<div class="column" onclick="main(5)" id="column5">
+					<div id="x5y0"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x5y1"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x5y2"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x5y3"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x5y4"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x5y5"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+				</div>
+				<div class="column" onclick="main(6)" id="column6">
+					<div id="x6y0"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x6y1"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x6y2"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x6y3"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x6y4"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x6y5"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+				</div>
+				<div class="column" onclick="main(7)" id="column7">
+					<div id="x7y0"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x7y1"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x7y2"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x7y3"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x7y4"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+					<div id="x7y5"><img src="./images/emptyT.gif" height="75" width="75" alt="No image found" /></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
